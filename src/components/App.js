@@ -4,7 +4,6 @@ import { BrowserRouter as Router,Routes , Route } from 'react-router-dom';
 import {Navbar, Home, CreatePost, PostDetail} from './'
 
 
-
 function App() {
   return (
     <Router>
@@ -12,10 +11,6 @@ function App() {
       <Navbar/>
 
       <Routes >
-        {/* <Route exact path = '/' component= {Home} />
-        <Route exact path = '/post/:postId' component= {PostDetail} />
-        <Route exact path = '/create-post' component= {CreatePost} /> */}
-
         <Route  path = '/' element= {<Home/>} />
         <Route  path = '/post/:postId' element= {<PostDetail/>} />
         <Route  path = '/create-post' element= {<CreatePost/>} />
